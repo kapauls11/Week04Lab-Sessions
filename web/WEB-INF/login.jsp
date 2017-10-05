@@ -12,15 +12,16 @@
         <title>Login Page</title>
     </head>
     <body>
-       <h1>Remember Me Login Page</h1>
-        <div>
-            <form action="login" method="post">
-                Username: <input type="text" name="username" value="${username}"><br>
-                Password: <input type="text" name="password" value="${password}"><br>
-                <input type="submit" value="Login">  
-            </form>
-                <input type="checkbox" name="remember">Remember me<br>
-            ${loginMessage}
-</div>
+        
+      <h1>Remember Me Login Page</h1>
+      
+        <form action='login' method='POST'>
+        Username: <input type='text' name='username' value='${username}'></br>
+        Password: <input type='password' name='password' value='${password}'></br>
+        <input type='submit' value='Login'></br>
+        <input type="checkbox" name="remember" value="true" ${checked}> Remember me<br>
+        
+        </form>
+      ${message}
     </body>
 </html>
